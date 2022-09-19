@@ -7665,7 +7665,7 @@ __webpack_require__.r(__webpack_exports__);
 const environment = {
     production: false,
     //serverUrl: 'http://api.eot.tn'//'http://41.231.122.41:1337'
-    serverUrl: 'http://localhost:1337' //'http://41.231.122.41:1337'
+    serverUrl: 'http://localhost' //'http://41.231.122.41:1337'
     // serverUrl: 'http://41.231.122.41:1337'
 };
 
