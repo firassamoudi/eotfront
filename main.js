@@ -1150,11 +1150,11 @@ class HeaderComponent {
                 icon: 'insights',
                 path: 'insights'
             },
-            {
-                title: 'Jobs',
-                icon: 'jobs',
-                path: 'jobs'
-            },
+            /* {
+               title: 'Jobs',
+               icon: 'jobs',
+               path: 'jobs'
+             },*/
             /* {
                title: 'Voyage dans l’écosystème',
                icon: 'voyage',
@@ -4149,7 +4149,7 @@ class HomeComponent {
     }
 }
 HomeComponent.ɵfac = function HomeComponent_Factory(t) { return new (t || HomeComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_core_services_title_service__WEBPACK_IMPORTED_MODULE_2__["TitleService"])); };
-HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HomeComponent, selectors: [["app-home"]], decls: 62, vars: 15, consts: [[1, "container", "text-center"], [1, "slider"], [3, "options"], ["carouselSlide", ""], [1, "row", "justify-content-center", "pt-5"], [1, "col-lg-10"], [1, "home-seach-text"], [3, "ngSubmit"], [1, "search-input", "mb-100"], ["src", "assets/images/search.svg", 3, "svgStyle"], ["type", "text", "placeholder", "Recherche", 3, "ngModel", "ngModelOptions", "ngModelChange"], [1, "obs-title"], [1, "row", "text-center", "justify-content-center", "mb-100"], ["class", "col-lg-2 stat-item text-center text-lg-start mb-3", 4, "ngFor", "ngForOf"], [1, "container-fluid", "p-0"], [1, "w-100", "mb-130", "d-flex", "justify-content-center"], [1, "slider", "w-75"], [4, "ngFor", "ngForOf"], ["alt", "", "src", "assets/images/ic_cicle_blue_up.svg", 1, "floating-circle", "float-r"], [1, "main-title-content"], [1, "pin-container", "flex-wrap"], [1, "content-container", "py-5"], [1, "main-title"], [1, "main-paragraph"], [1, "button-container"], [1, "link-list"], [1, "link-item"], ["routerLink", "/add/startup", 1, "link"], ["src", "assets/images/ic-add-circle-white.svg", 3, "svgStyle"], ["routerLink", "/add/structure", 1, "link"], [1, "image-container"], ["alt", "main image", "src", "assets/images/main_title_img@2x.png", 1, "main-image"], [1, "container-fluid"], [1, "about", "mb-80", "col-md-6", "offset-md-6"], [1, "header", "text-center"], [1, "m-0"], ["src", "assets/images/about.svg"], [1, "container"], [1, "row"], [1, "col-md-11", "offset-md-1"], ["routerLink", "/about", 1, "col-md-3", "offset-md-1", "btn", "submit-button", "align-self-center"], [1, "container", "carousel-slide"], [1, "row", "no-gutters"], [1, "col-lg-5", "home-slide", "first-slide"], [1, "slide-content", "d-flex", "flex-column", "justify-content-center", "h-100"], ["routerLink", "/insights", 1, "carousel-link"], ["src", "assets/icons/ic-go.svg", 3, "svgStyle"], ["alt", "dots", "src", "assets/images/white-dots.svg", 1, "dots"], [1, "circle"], [1, "col-lg-7", "first-image-slide"], ["src", "assets/images/blue-dots.svg", 1, "dots", "dots-1", 3, "svgStyle"], ["src", "assets/images/blue-dots.svg", 1, "dots", "dots-2", 3, "svgStyle"], [1, "col-lg-7", "second-image-slide", "order-1", "order-lg-0"], [1, "col-lg-5", "home-slide", "second-slide", "order-0", "order-lg-1"], ["routerLink", "/map", 1, "carousel-link"], [1, "col-lg-2", "stat-item", "text-center", "text-lg-start", "mb-3"], [1, "stat-value"], [1, "stat-title"], [3, "insight"]], template: function HomeComponent_Template(rf, ctx) { if (rf & 1) {
+HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HomeComponent, selectors: [["app-home"]], decls: 58, vars: 13, consts: [[1, "container", "text-center"], [1, "slider"], [3, "options"], ["carouselSlide", ""], [1, "row", "justify-content-center", "pt-5"], [1, "col-lg-10"], [1, "home-seach-text"], [3, "ngSubmit"], [1, "search-input", "mb-100"], ["src", "assets/images/search.svg", 3, "svgStyle"], ["type", "text", "placeholder", "Recherche", 3, "ngModel", "ngModelOptions", "ngModelChange"], [1, "obs-title"], [1, "row", "text-center", "justify-content-center", "mb-100"], ["class", "col-lg-2 stat-item text-center text-lg-start mb-3", 4, "ngFor", "ngForOf"], [1, "container-fluid", "p-0"], [1, "w-100", "mb-130", "d-flex", "justify-content-center"], [1, "slider", "w-75"], [4, "ngFor", "ngForOf"], ["alt", "", "src", "assets/images/ic_cicle_blue_up.svg", 1, "floating-circle", "float-r"], [1, "main-title-content"], [1, "pin-container", "flex-wrap"], [1, "content-container", "py-5"], [1, "main-title"], [1, "main-paragraph"], [1, "button-container"], [1, "link-list"], [1, "link-item"], ["routerLink", "/add/startup", 1, "link"], ["src", "assets/images/ic-add-circle-white.svg", 3, "svgStyle"], ["routerLink", "/add/structure", 1, "link"], [1, "image-container"], ["alt", "main image", "src", "assets/images/main_title_img@2x.png", 1, "main-image"], [1, "container-fluid"], [1, "about", "mb-80", "col-md-6", "offset-md-6"], [1, "header", "text-center"], [1, "m-0"], ["src", "assets/images/about.svg"], [1, "container"], [1, "row"], [1, "col-md-11", "offset-md-1"], ["routerLink", "/about", 1, "col-md-3", "offset-md-1", "btn", "submit-button", "align-self-center"], [1, "container", "carousel-slide"], [1, "row", "no-gutters"], [1, "col-lg-5", "home-slide", "first-slide"], [1, "slide-content", "d-flex", "flex-column", "justify-content-center", "h-100"], ["routerLink", "/insights", 1, "carousel-link"], ["src", "assets/icons/ic-go.svg", 3, "svgStyle"], ["alt", "dots", "src", "assets/images/white-dots.svg", 1, "dots"], [1, "circle"], [1, "col-lg-7", "first-image-slide"], ["src", "assets/images/blue-dots.svg", 1, "dots", "dots-1", 3, "svgStyle"], ["src", "assets/images/blue-dots.svg", 1, "dots", "dots-2", 3, "svgStyle"], [1, "col-lg-7", "second-image-slide", "order-1", "order-lg-0"], [1, "col-lg-5", "home-slide", "second-slide", "order-0", "order-lg-1"], ["routerLink", "/map", 1, "carousel-link"], [1, "col-lg-2", "stat-item", "text-center", "text-lg-start", "mb-3"], [1, "stat-value"], [1, "stat-title"], [3, "insight"]], template: function HomeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "owl-carousel-o", 2);
@@ -4213,41 +4213,35 @@ HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComp
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](39, "svg-icon", 28);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](40, "li", 26);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](41, "a", 29);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](42, " Ajouter votre offre d\u2019emploi ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](43, "svg-icon", 28);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](40, "div", 30);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](41, "img", 31);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](44, "div", 30);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](45, "img", 31);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](42, "div", 32);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](43, "div", 33);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](44, "div", 34);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](45, "h1", 35);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](46, "svg-icon", 36);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](47, " \u00C0 propos");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](46, "div", 32);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](47, "div", 33);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](48, "div", 34);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](49, "h1", 35);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](50, "svg-icon", 36);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](51, " \u00C0 propos");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](48, "div", 37);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](49, "div", 38);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](50, "div", 39);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](51, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](52, "Entrepreneurs of Tunisia est l'observatoire de l'\u00E9cosyst\u00E8me des startups Tunisien.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](52, "div", 37);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](53, "div", 38);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](54, "div", 39);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](55, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](56, "Entrepreneurs of Tunisia est l'observatoire de l'\u00E9cosyst\u00E8me des startups Tunisien.");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](57, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](58, "Initiative de la Fondation BIAT pour la jeunesse, en partenariat avec MAZAM et soutenue par Biatlabs, Entrepreneurs of Tunisia vous permet d'explorer l'\u00E9cosyst\u00E8me des startups Tunisien. Vous pouvez d\u00E9couvrir les startups, les structures de soutien, les investisseurs et encore plus d'acteurs sur notre cartographie dynamique ou \u00E0 travers les infographies et les rapports que nous publions r\u00E9guli\u00E8rement.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](53, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](54, "Initiative de la Fondation BIAT pour la jeunesse, en partenariat avec MAZAM et soutenue par Biatlabs, Entrepreneurs of Tunisia vous permet d'explorer l'\u00E9cosyst\u00E8me des startups Tunisien. Vous pouvez d\u00E9couvrir les startups, les structures de soutien, les investisseurs et encore plus d'acteurs sur notre cartographie dynamique ou \u00E0 travers les infographies et les rapports que nous publions r\u00E9guli\u00E8rement.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](59, "div", 38);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](60, "a", 40);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](61, "Consulter la page");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](55, "div", 38);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](56, "a", 40);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](57, "Consulter la page");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -4257,9 +4251,9 @@ HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComp
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("options", ctx.customOptions);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](9);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("svgStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](10, _c1));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("svgStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](9, _c1));
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.keyword)("ngModelOptions", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](11, _c2));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.keyword)("ngModelOptions", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](10, _c2));
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.stats);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
@@ -4267,11 +4261,9 @@ HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComp
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.insights);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("svgStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](11, _c3));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("svgStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](12, _c3));
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("svgStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](13, _c3));
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("svgStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](14, _c3));
     } }, directives: [ngx_owl_carousel_o__WEBPACK_IMPORTED_MODULE_3__["CarouselComponent"], ngx_owl_carousel_o__WEBPACK_IMPORTED_MODULE_3__["CarouselSlideDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ɵangular_packages_forms_forms_y"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgForm"], angular_svg_icon__WEBPACK_IMPORTED_MODULE_5__["SvgIconComponent"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgModel"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgForOf"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterLinkWithHref"], _shared_components_insight_item_insight_item_component__WEBPACK_IMPORTED_MODULE_7__["InsightItemComponent"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2hvbWUvaG9tZS5jb21wb25lbnQuc2NzcyJ9 */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](HomeComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
@@ -7666,6 +7658,7 @@ const environment = {
     production: false,
     //serverUrl: 'http://api.eot.tn'//'http://41.231.122.41:1337'
     serverUrl: 'http://51.222.106.234:1337' //'http://41.231.122.41:1337'
+    //serverUrl: 'http://localhost:1337'//'http://41.231.122.41:1337'
     // serverUrl: 'http://41.231.122.41:1337'
 };
 
