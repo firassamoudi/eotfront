@@ -2778,7 +2778,7 @@ class AddComponent {
     }
 }
 AddComponent.ɵfac = function AddComponent_Factory(t) { return new (t || AddComponent)(); };
-AddComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AddComponent, selectors: [["app-add"]], decls: 21, vars: 3, consts: [[1, "container", "container-shape"], [1, "row"], [1, "col-lg-6"], [1, "add-title"], [1, "add-text"], [1, "col-lg-6", "add-visual"], [1, "plus-icon", "d-none", "d-lg-block"], [1, "form-rectangle"], ["mat-tab-nav-bar", ""], ["mat-tab-link", "", "routerLink", "startup", "routerLinkActive", "", 3, "active"], ["rla0", "routerLinkActive"], ["mat-tab-link", "", "routerLink", "structure", "routerLinkActive", "", 3, "active"], ["rla1", "routerLinkActive"], ["mat-tab-link", "", "routerLink", "job", "routerLinkActive", "", 3, "active"]], template: function AddComponent_Template(rf, ctx) { if (rf & 1) {
+AddComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AddComponent, selectors: [["app-add"]], decls: 18, vars: 2, consts: [[1, "container", "container-shape"], [1, "row"], [1, "col-lg-6"], [1, "add-title"], [1, "add-text"], [1, "col-lg-6", "add-visual"], [1, "plus-icon", "d-none", "d-lg-block"], [1, "form-rectangle"], ["mat-tab-nav-bar", ""], ["mat-tab-link", "", "routerLink", "startup", "routerLinkActive", "", 3, "active"], ["rla0", "routerLinkActive"], ["mat-tab-link", "", "routerLink", "structure", "routerLinkActive", "", 3, "active"], ["rla1", "routerLinkActive"]], template: function AddComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
@@ -2801,11 +2801,8 @@ AddComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCompo
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "a", 11, 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, " Structure de Soutien ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "a", 13, 12);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, " Offre d\u2019emploi ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](20, "router-outlet");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](17, "router-outlet");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
@@ -2813,8 +2810,6 @@ AddComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCompo
         const _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](15);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](11);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("active", _r0.isActive);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("active", _r1.isActive);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("active", _r1.isActive);
     } }, directives: [_angular_material_tabs__WEBPACK_IMPORTED_MODULE_1__["MatTabNav"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterLinkWithHref"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_1__["MatTabLink"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterLinkActive"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterOutlet"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2FkZC9hZGQuY29tcG9uZW50LnNjc3MifQ== */"] });
@@ -7656,8 +7651,8 @@ __webpack_require__.r(__webpack_exports__);
 // The list of file replacements can be found in `angular.json`.
 const environment = {
     production: false,
-    //serverUrl: 'http://api.eot.tn'//'http://41.231.122.41:1337'
-    serverUrl: 'http://51.222.106.234:1337' //'http://41.231.122.41:1337'
+    serverUrl: 'http://api.eot.tn' //'http://41.231.122.41:1337'
+    //serverUrl: 'https://51.222.106.234:1337'//'http://41.231.122.41:1337'
     //serverUrl: 'http://localhost:1337'//'http://41.231.122.41:1337'
     // serverUrl: 'http://41.231.122.41:1337'
 };
