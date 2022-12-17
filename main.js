@@ -1542,6 +1542,7 @@ __webpack_require__.r(__webpack_exports__);
 class ApiService {
     constructor(http) {
         this.http = http;
+        this.headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]().set('content-type', 'application/json').set('Access-Control-Allow-Origin', '*');
         this.imageHeaders = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({ 'File-Upload': 'true' });
     }
     static handleError(error) {
@@ -1558,54 +1559,54 @@ class ApiService {
         return Promise.reject(errMsg);
     }
     me() {
-        return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].serverUrl}/users/me`, { headers: { "Content-Type": "application/json" } })
+        return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].serverUrl}/users/me`, { headers: this.headers })
             .toPromise()
             .catch(ApiService.handleError);
     }
     getStats() {
-        return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].serverUrl}/stats`, { headers: { "Content-Type": "application/json" } })
+        return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].serverUrl}/stats`, { headers: this.headers })
             .toPromise()
             .catch(ApiService.handleError);
     }
     getInsights(type) {
-        return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].serverUrl}/insights?${type ? `type=${type}` : ''}`, { headers: { "Content-Type": "application/json" } })
+        return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].serverUrl}/insights?${type ? `type=${type}` : ''}`, { headers: this.headers })
             .toPromise()
             .catch(ApiService.handleError);
     }
     searchInsights(type, keyword) {
-        return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].serverUrl}/insights?${type ? `type=${type}` : ''}&${keyword ? `title_containss=${keyword}` : ''}`, { headers: { "Content-Type": "application/json" } })
+        return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].serverUrl}/insights?${type ? `type=${type}` : ''}&${keyword ? `title_containss=${keyword}` : ''}`, { headers: this.headers })
             .toPromise()
             .catch(ApiService.handleError);
     }
     getPartners() {
-        return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].serverUrl}/partners`, { headers: { "Content-Type": "application/json" } })
+        return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].serverUrl}/partners`, { headers: this.headers })
             .toPromise()
             .catch(ApiService.handleError);
     }
     getOrganisations(type) {
-        return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].serverUrl}/organizations?${type ? `type=${type}` : ''}`, { headers: { "Content-Type": "application/json" } })
+        return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].serverUrl}/organizations?${type ? `type=${type}` : ''}`, { headers: this.headers })
             .toPromise()
             .catch(ApiService.handleError);
     }
     getOrganisationById(id) {
-        return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].serverUrl}/organizations?id=${id}`, { headers: { "Content-Type": "application/json" } })
+        return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].serverUrl}/organizations?id=${id}`, { headers: this.headers })
             .toPromise()
             .catch(ApiService.handleError);
     }
     getInsightById(id) {
-        return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].serverUrl}/insights?id=${id}`, { headers: { "Content-Type": "application/json" } })
+        return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].serverUrl}/insights?id=${id}`, { headers: this.headers })
             .toPromise()
             .catch(ApiService.handleError);
     }
     login(body) {
-        return this.http.post(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].serverUrl}/auth/local`, JSON.stringify(body), { headers: { "Content-Type": "application/json" } })
+        return this.http.post(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].serverUrl}/auth/local`, JSON.stringify(body), { headers: this.headers })
             .toPromise()
             .catch(error => {
             return Promise.reject(error.error.message[0].messages[0].message);
         });
     }
     register(body) {
-        return this.http.post(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].serverUrl}/auth/local/register`, JSON.stringify(body), { headers: { "Content-Type": "application/json" } })
+        return this.http.post(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].serverUrl}/auth/local/register`, JSON.stringify(body), { headers: this.headers })
             .toPromise()
             .catch(error => {
             return Promise.reject(error.error.message[0].messages[0].message);
@@ -1622,38 +1623,38 @@ class ApiService {
             .catch(ApiService.handleError);
     }
     addOrganisation(body) {
-        return this.http.post(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].serverUrl}/organizations`, JSON.stringify(body), { headers: { "Content-Type": "application/json" } })
+        return this.http.post(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].serverUrl}/organizations`, JSON.stringify(body), { headers: this.headers })
             .toPromise()
             .catch(ApiService.handleError);
     }
     getVoyages() {
-        return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].serverUrl}/voyages`, { headers: { "Content-Type": "application/json" } })
+        return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].serverUrl}/voyages`, { headers: this.headers })
             .toPromise()
             .catch(ApiService.handleError);
     }
     forgotPassword(body) {
-        return this.http.post(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].serverUrl}/auth/forgot-password`, JSON.stringify(body), { headers: { "Content-Type": "application/json" } })
+        return this.http.post(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].serverUrl}/auth/forgot-password`, JSON.stringify(body), { headers: this.headers })
             .toPromise()
             .catch(error => {
             return Promise.reject(error.error.message[0].messages[0].message);
         });
     }
     resetPassword(body) {
-        return this.http.post(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].serverUrl}/auth/reset-password`, JSON.stringify(body), { headers: { "Content-Type": "application/json" } })
+        return this.http.post(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].serverUrl}/auth/reset-password`, JSON.stringify(body), { headers: this.headers })
             .toPromise()
             .catch(error => {
             return Promise.reject(error.error.message[0].messages[0].message);
         });
     }
     loginGoogle(token) {
-        return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].serverUrl}/auth/google/callback?access_token=${token}`, { headers: { "Content-Type": "application/json" } })
+        return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].serverUrl}/auth/google/callback?access_token=${token}`, { headers: this.headers })
             .toPromise()
             .catch(error => {
             return Promise.reject(error.error.message[0].messages[0].message);
         });
     }
     loginFacebook(token) {
-        return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].serverUrl}/auth/facebook/callback?access_token=${token}`, { headers: { "Content-Type": "application/json" } })
+        return this.http.get(`${_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].serverUrl}/auth/facebook/callback?access_token=${token}`, { headers: this.headers })
             .toPromise()
             .catch(error => {
             return Promise.reject(error.error.message[0].messages[0].message);
